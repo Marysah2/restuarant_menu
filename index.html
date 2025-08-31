@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delish Bites - Restaurant Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Delish Bites</h1>
+    <nav>
+      <ul>
+        <li><button onclick="filterMenu('all')">All</button></li>
+        <li><button onclick="filterMenu('starter')">Starters</button></li>
+        <li><button onclick="filterMenu('main')">Mains</button></li>
+        <li><button onclick="filterMenu('dessert')">Desserts</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Search Bar -->
+  <section class="search-section">
+    <input type="text" id="searchBar" placeholder="Search food..." onkeyup="searchMenu()">
+  </section>
+
+  <!-- Menu Section -->
+  <main id="menu">
+
+    <!-- Starter Item -->
+    <div class="menu-item" data-category="starter">
+      <img src="https://i0.wp.com/thejoyfilledkitchen.com/wp-content/uploads/2022/02/DSC_0047-2.jpg?fit=800%2C1200&ssl=1" alt="Garlic Bread">
+      <h3>Garlic Bread</h3>
+      <p>Toasted bread with garlic and herbs.</p>
+      <span>$4.99</span>
+    </div>
+
+    <!-- Main Course Item -->
+    <div class="menu-item" data-category="main">
+      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80" alt="Grilled Chicken">
+      <h3>Grilled Chicken</h3>
+      <p>Served with vegetables and creamy mushroom sauce.</p>
+      <span>$12.99</span>
+    </div>
+
+    <!-- Add more items here -->
+
+  </main>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+<footer>
+    <p>Created by Banai Marysah &copy; 2025</p>
+  </footer></body>
+</html>
